@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Village of Northpoint</title>
 
+<style>
+
+body{
+    background:#f2efe7;
+    text-align:center;
+    font-family:Arial;
+}
+
+.map-container{
+    position:relative;
+    display:inline-block;
+}
+
+.map{
+    width:100%;
+    max-width:1700px;
+}
+
+/* Spiro Residence hotspot */
+
+#spiro{
+    position:absolute;
+
+    left:515px;
+    top:607px;
+
+    width:115px;
+    height:24px;
+
+    border:2px solid blue;
+    background:rgba(0,0,255,.25);
+
+    cursor:pointer;
+}
+
+#spiro:hover{
+    background:red;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>The Village of Northpoint</h1>
+
+<div class="map-container">
+
+<img src="The Village of Northpoint Map OG.jpg"
+class="map">
+
+<a id="spiro"
+href="#"
+onclick="showLocation(); return false;">
+</a>
+
+</div>
+
+<script>
+
+function showLocation(){
+
+alert("You clicked the Spiro Residence!");
+
+}
+
+</script>
+
+</body>
+</html>
